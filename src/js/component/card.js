@@ -23,7 +23,7 @@ export const Card = (props) => {
                     <h5 className="card-title">{props.name}</h5>
                     <p className="card-text mb-0">{props.text1}</p>
                     <p className="card-text mb-0">{props.text2}</p>
-                    <p className="card-text mb-3">{props.text3}{props.url}</p>
+                    <p className="card-text mb-3">{props.text3}</p>
                     <div className="d-flex justify-content-between">
                     <Link className="me-5" to={"/moreinfo/" + nameCard + "/" + props.uid}>
                         <span className="btn btn-primary" href="#" role="button">

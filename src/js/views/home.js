@@ -6,7 +6,7 @@ export const Home = () => {
 	const { store, actions } = useContext(Context);
 	return (
         <>
-            <h1>characters</h1>
+            <h1 className="text-danger">characters</h1>
             <div className="mb-5 d-flex overflow-auto">
                 {store.characters.map((character) => (
                     <Card
@@ -21,7 +21,7 @@ export const Home = () => {
                 ))}
             </div>
 
-            <h1>Planets</h1>
+            <h1 className="text-danger">Planets</h1>
             <div className="mb-5 d-flex overflow-auto">
                 {store.planets.map((planet) => (
                     <Card
@@ -36,7 +36,7 @@ export const Home = () => {
                 ))}
             </div>
 
-            <h1>Vehicles</h1>
+            <h1 className="text-danger">Vehicles</h1>
             <div className="mb-5 d-flex overflow-auto">
                 {store.vehicles.map((vehicle) => (
                     <Card
