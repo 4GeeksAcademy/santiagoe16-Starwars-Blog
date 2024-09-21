@@ -17,7 +17,7 @@ export const Navbar = () => {
 					</button>
 					<ul className="dropdown-menu ">
 						{store.favorites && store.favorites.length > 0 ? (store.favorites.map((favorite, index) => (
-							<li key={index} className=" dropdown-item user-select-none me-2"> {favorite} <i className="fas fa-trash ms-2" style={{cursor: "pointer"}}></i></li>
+							<li key={index} className=" dropdown-item user-select-none me-2"> {favorite} <i onClick={()=>actions.addFavorites(favorite)} className="fas fa-trash ms-2" style={{cursor: "pointer"}}></i></li>
 						))) : <li className="dropdown-item user-select-none me-2">(empty)</li>}
 						
 					</ul>
